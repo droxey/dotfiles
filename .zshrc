@@ -10,7 +10,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(git dotenv osx)
 
 #  -> Launch oh-my-zsh:
-export ZSH="/Users/droxey/.oh-my-zsh"; source $ZSH/oh-my-zsh.sh
+export ZSH="/Users/dani/.oh-my-zsh"; source $ZSH/oh-my-zsh.sh
 # ========= 🔼 ZSH CONF 🔼 =========
 
 
