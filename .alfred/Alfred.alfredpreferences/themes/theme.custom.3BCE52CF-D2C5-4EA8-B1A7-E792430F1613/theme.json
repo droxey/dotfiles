@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#FDFCFFFF",
+        "font" : "Fira Sans Condensed",
+        "color" : "#CFCED0FF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Fira Sans Condensed",
+        "color" : "#F4FBFFFF"
+      },
+      "backgroundSelected" : "#0381B0FF",
+      "text" : {
+        "size" : 17,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Fira Sans Condensed Medium",
+        "color" : "#FFFFFFD8"
+      },
+      "iconPaddingHorizontal" : 4,
+      "paddingVertical" : 4,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 0,
+      "background" : "#FFFFFF00",
+      "spacing" : 4,
+      "text" : {
+        "size" : 34,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Fira Sans Condensed Medium",
+        "color" : "#FFFFFFFF"
+      },
+      "backgroundSelected" : "#0381B0FF"
+    },
+    "window" : {
+      "color" : "#00000062",
+      "paddingHorizontal" : 0,
+      "width" : 559,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 15,
+      "roundness" : 3,
+      "paddingVertical" : 0
+    },
+    "credit" : "droxey",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#0081AFFF",
+      "thickness" : 4
+    },
+    "name" : "droxey"
+  }
+}

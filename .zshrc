@@ -1,7 +1,7 @@
 # === === === === === === === === === === === === === === === === ===
 # @droxey's Custom ZSH Config
 # === === === === === === === === === === === === === === === === ===
-ZSH_THEME="ys"
+ZSH_THEME="oxide"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
@@ -10,7 +10,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(git dotenv osx)
 
 #  -> Launch oh-my-zsh:
-export ZSH="/Users/droxey/.oh-my-zsh"; source $ZSH/oh-my-zsh.sh
+export ZSH="/Users/dani/.oh-my-zsh"; source $ZSH/oh-my-zsh.sh
 # ========= 🔼 ZSH CONF 🔼 =========
 
 
@@ -39,4 +39,5 @@ bindkey "^[[1;3D" backward-word
 # ========= 🔽 ALIASES 🔽 =========
 function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias obs='cd /Users/dani/dev/repos/obs-studio/build/rundir/RelWithDebInfo/bin && ./obs'
 # ========= 🔼 ALIASES 🔼 =========
