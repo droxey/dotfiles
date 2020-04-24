@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # Clone bare dotfiles repo to home directory.
 git clone --bare https://github.com/droxey/dotfiles.git $HOME/.dotfiles
