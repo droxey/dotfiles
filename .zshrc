@@ -24,6 +24,11 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
    export EDITOR='code'
 fi
+
+#  -> Go
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export PATH=${PATH}:$GOBIN
 # ========= 🔼 ENV CONF 🔼 =========
 
 # ========= 🔽 KEYBINDINGS 🔽 =========
@@ -43,5 +48,6 @@ export PATH="$PATH:/Users/dani/.scripts"
 export PATH="$PATH:/var/root/Library/Python/3.8/bin"
 export PATH="$PATH:/Users/dani/.local/bin"
 if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
+   eval "$(pyenv init -)"
 fi
+export PATH="/usr/local/sbin:$PATH"

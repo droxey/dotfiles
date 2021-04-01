@@ -42,6 +42,6 @@ Temporary Items
 .nfs*
 
 ### Custom ###
-.vscode/
+# .vscode/
 .wakatime-project
 codealike.json

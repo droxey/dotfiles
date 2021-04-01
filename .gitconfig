@@ -3,6 +3,7 @@
     email = dani@bitoriented.com
 [alias]
     ignore = "!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi"
+    fnm = !git fetch upstream && git merge --no-log --no-ff --no-commit upstream/branch  && git reset file/path/not/to/be/updated && git checkout README.md
 [github]
     username = droxey
     user = droxey
@@ -28,3 +29,5 @@
     packSizeLimit = 20m
 [branch]
     autosetupmerge = always
+[pull]
+	rebase = true
