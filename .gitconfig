@@ -1,6 +1,6 @@
 [user]
-    name = Dani Roxberry
-    email = dani@bitoriented.com
+	name = Dani Roxberry
+	email = dani@bitoriented.com
 [alias]
     ignore = "!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi"
     fnm = !git fetch upstream && git merge --no-log --no-ff --no-commit upstream/branch  && git reset file/path/not/to/be/updated && git checkout README.md
@@ -31,3 +31,5 @@
     autosetupmerge = always
 [pull]
 	rebase = true
+[color]
+	ui = true

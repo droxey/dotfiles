@@ -1,20 +1,22 @@
 # === === === === === === === === === === === === === === === === ===
 # @droxey's Custom ZSH Config
 # === === === === === === === === === === === === === === === === ===
-ZSH_THEME="oxide"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-#  -> Enabled Plugins:
-plugins=(git dotenv osx)
+plugins=(bgnotify catimg command-not-found dash git git-extras docker pip virtualenv)
+
+#  -> Powerlevel 10k
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+ source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 #  -> Launch oh-my-zsh:
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-# ========= 🔼 ZSH CONF 🔼 =========
 
-# ========= 🔽 ENV CONF 🔽 =========
 #  -> Locale Settings:
 export LANG=en_US.UTF-8
 
@@ -25,29 +27,32 @@ else
    export EDITOR='code'
 fi
 
-#  -> Go
-export GOPATH=$HOME/go
-export GOBIN=$GOPATH/bin
-export PATH=${PATH}:$GOBIN
-# ========= 🔼 ENV CONF 🔼 =========
+source ~/.env
 
-# ========= 🔽 KEYBINDINGS 🔽 =========
+#  -> Ruby
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# -> iTerm2 Integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+
+#  -> Keybindings
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
-# ========= 🔼 KEYBINDINGS 🔼 =========
 
-# ========= 🔽 ALIASES 🔽 =========
+# -> Aliases
 function gi() { curl -sLw n https://www.gitignore.io/api/$@; }
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias githubstars='curl https://gist.githubusercontent.com/yyx990803/7745157/raw/dbcf4874d55490f3c2af9d593950964fe48b1e31/starcounter.js -sSL | node - droxey -t 1'
 alias mountusb='sudo ext4fuse /dev/disk2s1 ~/tmp/usb -o allow_other'
-# ========= 🔼 ALIASES 🔼 =========
+alias mongod="mongo --port 27017 --dbpath /opt/homebrew/var/mongodb"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
-export PATH="$PATH:/Users/dani/.scripts"
+# -> Aliases
+export PATH="$PATH:$HOME/.scripts"
 export PATH="$PATH:/var/root/Library/Python/3.8/bin"
-export PATH="$PATH:/Users/dani/.local/bin"
-if command -v pyenv 1>/dev/null 2>&1; then
-   eval "$(pyenv init -)"
-fi
+export PATH="$PATH:/Users/droxey/Library/Python/3.8/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$PATH:/opt/homebrew/bin/"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
