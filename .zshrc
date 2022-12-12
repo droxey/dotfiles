@@ -41,7 +41,7 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias githubstars='curl https://gist.githubusercontent.com/yyx990803/7745157/raw/dbcf4874d55490f3c2af9d593950964fe48b1e31/starcounter.js -sSL | node - droxey -t 1'
 alias mountusb='sudo ext4fuse /dev/disk2s1 ~/tmp/usb -o allow_other'
 alias mongod="mongo --port 27017 --dbpath /opt/homebrew/var/mongodb"
-alias plistbackup="macprefs backup -t system_preferences startup_items shared_file_lists dotfiles preferences  && rm -r ~/.macprefs/* && mv -v ~/Dropbox/MacPrefsBackup/* ~/.macprefs/"
+alias plistbackup="macprefs backup -t system_preferences startup_items preferences && rm -r ~/.macprefs/* && mv -v ~/Dropbox/MacPrefsBackup/* ~/.macprefs/"
 
 # -> Path Modification
 if [ -f '/Users/droxey/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/droxey/google-cloud-sdk/path.zsh.inc'; fi
