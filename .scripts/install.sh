@@ -28,5 +28,11 @@ dotfiles config status.showUntrackedFiles no
 # Install MacPrefs.
 brew install clintmod/formulas/macprefs
 
+# Prep MacPrefs backup folder for restore.
+chmod +a "group:admin allow list,search,readattr,readextattr,readsecurity" .macprefs
+chmod -R +a "group:admin allow list,search,readattr,readextattr,readsecurity" .macprefs
+chmod -R +X .macprefs
+chmod -R o=-x .macprefs
+
 # Restore .plist settings.
 macprefs restore
