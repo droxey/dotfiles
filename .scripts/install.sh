@@ -59,5 +59,4 @@ chmod -R +a "group:admin allow list,search,readattr,readextattr,readsecurity" $P
 chmod -R +X $PREF_FOLDER
 chmod -R o=-x $PREF_FOLDER
 cd ~/.macprefs 
-pyenv local 3.6
 macprefs restore
