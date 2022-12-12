@@ -45,5 +45,5 @@ Temporary Items
 # .vscode/
 .wakatime-project
 codealike.json
-
-# /Users/droxey/.macprefs/ssh
+*.cfg
+id_*
