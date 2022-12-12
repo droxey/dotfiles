@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommonPreferences schemaVersion="1.0" dyn_lists="">
+   <WorkspacePreferences AllowDirectMobile_patch="1" AllowMobileClients_patch="1" MountNTFSToHostOnConnectionToVm_patch="1" dyn_lists="">
+      <DefaultVmDirectory>/Users/droxey/Parallels</DefaultVmDirectory>
+      <DistributedDirectory>1</DistributedDirectory>
+      <DefaultUseConsole>1</DefaultUseConsole>
+      <DefaultChangeSettings>1</DefaultChangeSettings>
+      <DispatcherPort>64000</DispatcherPort>
+      <ListenAnyAddr>0</ListenAnyAddr>
+      <AllowMobileClients>0</AllowMobileClients>
+      <AllowDirectMobile>0</AllowDirectMobile>
+      <AllowMultiplePMC>0</AllowMultiplePMC>
+      <MobileAdvancedAuthMode>0</MobileAdvancedAuthMode>
+      <HostId></HostId>
+      <DefaultCommandHistorySize>50</DefaultCommandHistorySize>
+      <MinimalSecurityLevel>0</MinimalSecurityLevel>
+      <VmTimeoutOnShutdown>120</VmTimeoutOnShutdown>
+      <AllowVmForceShutdown>1</AllowVmForceShutdown>
+      <VmUptimeSyncTimeoutInMinutes>0</VmUptimeSyncTimeoutInMinutes>
+      <AllowUseNetworkShares>1</AllowUseNetworkShares>
+      <SwapPathForVMOnNetworkShares>/var/.Parallels_swap</SwapPathForVMOnNetworkShares>
+      <VmConfigWatcherEnabled>1</VmConfigWatcherEnabled>
+      <Limits dyn_lists="">
+         <MaxLogonActions>16</MaxLogonActions>
+         <MaxAuthAttemptsPerMinute>16</MaxAuthAttemptsPerMinute>
+      </Limits>
+      <UsbConnectionType>2</UsbConnectionType>
+      <EnableSpokenCommands>0</EnableSpokenCommands>
+      <EnableSendStatisticReport>0</EnableSendStatisticReport>
+      <ConfirmationModeByDefault>0</ConfirmationModeByDefault>
+      <DefaultPlainDiskAllowed>0</DefaultPlainDiskAllowed>
+      <VmConfigCacheEnabled>1</VmConfigCacheEnabled>
+      <SpecialOption>0</SpecialOption>
+      <SpecialOption2>0</SpecialOption2>
+      <LicenseRequestFlags>0</LicenseRequestFlags>
+      <MountNTFSToHostOnConnectionToVm>1</MountNTFSToHostOnConnectionToVm>
+      <VmGuestCollectPeriod>10</VmGuestCollectPeriod>
+      <TpmSyncingAllowed>1</TpmSyncingAllowed>
+   </WorkspacePreferences>
+   <ProxyPreferences WebPortalDomain_patch="18.1.0-53311" ProxyManagerURL_patch="" dyn_lists="">
+      <ProxyEnabled>0</ProxyEnabled>
+      <ProxyManagerURL>https://pax-manager.myparallels.com/xmlrpc/rpc.do</ProxyManagerURL>
+      <WebPortalDomain>parallels.com</WebPortalDomain>
+      <SignInThroughWeb>0</SignInThroughWeb>
+      <ConnectionStatus>0</ConnectionStatus>
+      <ProxyInternalFlagsMask>0</ProxyInternalFlagsMask>
+      <PaxSupportModeStatus>0</PaxSupportModeStatus>
+   </ProxyPreferences>
+   <IPhonePreferences dyn_lists="">
+      <AllowConnectionsFromIPhone>0</AllowConnectionsFromIPhone>
+      <ProxyPort>64001</ProxyPort>
+      <CertificateFile></CertificateFile>
+      <KeyFile></KeyFile>
+      <AllowAllUsersFromHost>1</AllowAllUsersFromHost>
+      <IdleSessionTimeout>0</IdleSessionTimeout>
+      <LockScreenOnDisconnect>0</LockScreenOnDisconnect>
+      <BlockScreenInSession>0</BlockScreenInSession>
+   </IPhonePreferences>
+   <MemoryPreferences AdjustMemAuto_patch="1" dyn_lists="">
+      <AdjustMemAuto>1</AdjustMemAuto>
+      <ReservedMemoryLimit>27764</ReservedMemoryLimit>
+      <ReservedMemoryMin>96</ReservedMemoryMin>
+      <ReservedMemoryMax>27764</ReservedMemoryMax>
+      <MinVmMemory>4</MinVmMemory>
+      <MaxVmMemory>32768</MaxVmMemory>
+      <RecommendedMaxVmMemory>27764</RecommendedMaxVmMemory>
+      <HostRamSize>32768</HostRamSize>
+      <Overcommit>1</Overcommit>
+   </MemoryPreferences>
+   <HeadlessPreferences dyn_lists="">
+      <Enabled>1</Enabled>
+   </HeadlessPreferences>
+   <PciPreferences dyn_lists="">
+      <PrimaryVgaAllowed>0</PrimaryVgaAllowed>
+      <GenericPciDevices dyn_lists="GenericPciDevice 0"/>
+   </PciPreferences>
+   <UsbPreferences dyn_lists="UsbIdentity 3 UsbBlackList">
+      <AssociationsConvertedOnVersion>18</AssociationsConvertedOnVersion>
+      <UsbIdentity id="0" dyn_lists="Association 0">
+         <SystemName>2200000|090c|1000|super|--|0370522060006971</SystemName>
+         <FriendlyName>Flash Drive FIT</FriendlyName>
+         <CustomName>0</CustomName>
+         <Index>1</Index>
+         <UsbType>13</UsbType>
+         <AssociationsNew dyn_lists="Association 0"/>
+      </UsbIdentity>
+      <UsbIdentity id="1" dyn_lists="Association 0">
+         <SystemName>VIRTUAL@MSC@e811f23c67279374240a6c763e67bf781c514948|203a|fff7|unknown|--|e811f23c67279374240a6c763e67bf781c514948@/dev/disk4</SystemName>
+         <FriendlyName>Samsung Flash Drive FIT Media (disk4)</FriendlyName>
+         <CustomName>0</CustomName>
+         <Index>1</Index>
+         <UsbType>13</UsbType>
+         <AssociationsNew dyn_lists="Association 0"/>
+      </UsbIdentity>
+      <UsbIdentity id="2" dyn_lists="Association 0">
+         <SystemName>VIRTUAL@MSC@d7e5ad9386ffaa63ba02a2e6de37a26524949395|203a|fff7|unknown|--|d7e5ad9386ffaa63ba02a2e6de37a26524949395@/dev/disk4</SystemName>
+         <FriendlyName>Apple SDXC Reader Media (disk4)</FriendlyName>
+         <CustomName>0</CustomName>
+         <Index>1</Index>
+         <UsbType>13</UsbType>
+         <AssociationsNew dyn_lists="Association 0"/>
+      </UsbIdentity>
+      <UsbVirtualDisks dyn_lists="">
+         <FireWire>1</FireWire>
+         <Usb>0</Usb>
+         <Thunderbolt>1</Thunderbolt>
+         <Removable>1</Removable>
+      </UsbVirtualDisks>
+   </UsbPreferences>
+   <LockedOperationsList dyn_lists="LockedOperation"/>
+   <PasswordProtectedOperations dyn_lists="LockedOperation"/>
+   <Debug dyn_lists="">
+      <MonitorCCPath></MonitorCCPath>
+      <VtdSetup>4</VtdSetup>
+      <VerboseLogEnabled>0</VerboseLogEnabled>
+      <DisableDeletingReportArchive>0</DisableDeletingReportArchive>
+      <AddSerialPortOutputToReport>0</AddSerialPortOutputToReport>
+   </Debug>
+   <LockedSign>0</LockedSign>
+   <LogRotatePreferences dyn_lists="" Enabled_patch="2">
+      <Enabled>1</Enabled>
+      <CompressionEnabled>1</CompressionEnabled>
+      <IntervalInMinutes>60</IntervalInMinutes>
+      <SystemLogSettings dyn_lists="">
+         <Count>5</Count>
+         <SizeInMb>16</SizeInMb>
+      </SystemLogSettings>
+      <VmLogSettings dyn_lists="">
+         <Count>3</Count>
+         <SizeInMb>16</SizeInMb>
+      </VmLogSettings>
+   </LogRotatePreferences>
+   <ProblemReportPreferences dyn_lists="">
+      <AllowAttachScreenshots>1</AllowAttachScreenshots>
+   </ProblemReportPreferences>
+   <HostFreeDiskSpace dyn_lists="">
+      <PollingPeriod>172800</PollingPeriod>
+      <FreeSpaceRatio>30</FreeSpaceRatio>
+   </HostFreeDiskSpace>
+</CommonPreferences>

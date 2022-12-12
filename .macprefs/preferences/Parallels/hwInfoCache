@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ParallelsHostInfo schemaVersion="1.0" dyn_lists="">
+   <HardwareUuid>{14e14918-9b86-5fdd-9703-7c4c29452c07}</HardwareUuid>
+   <HardwareUuidOriginal>{14e14918-9b86-5fdd-9703-7c4c29452c07}</HardwareUuidOriginal>
+   <SoundDefaultEnabled>1</SoundDefaultEnabled>
+   <UsbSupported>0</UsbSupported>
+   <PSRasterizer dyn_lists="">
+      <Description></Description>
+      <Executable></Executable>
+   </PSRasterizer>
+   <VtdSupported>0</VtdSupported>
+   <MemorySettings dyn_lists="AdvancedMemoryInfo 1">
+      <ReservedMemoryLimit>27764</ReservedMemoryLimit>
+      <ReservedMemoryMax>27764</ReservedMemoryMax>
+      <MinVmMemory>4</MinVmMemory>
+      <MaxVmMemory>32768</MaxVmMemory>
+      <RecommendedMaxMemory>27764</RecommendedMaxMemory>
+      <HostRamSize>32768</HostRamSize>
+      <AdvancedMemoryInfo id="0" dyn_lists="">
+         <FreeMemSize>8523</FreeMemSize>
+         <WireMemSize>2404</WireMemSize>
+         <InactiveMemSize>9380</InactiveMemSize>
+         <ActiveMemSize>10500</ActiveMemSize>
+         <VirtualMemSize>2264688128</VirtualMemSize>
+         <ResidentMemSize>691456</ResidentMemSize>
+      </AdvancedMemoryInfo>
+   </MemorySettings>
+   <HostNotebookFlag>1</HostNotebookFlag>
+   <NetworkSettings dyn_lists="">
+      <MaxVmNetAdapters>4</MaxVmNetAdapters>
+      <MaxHostNetAdapters>16</MaxHostNetAdapters>
+      <GlobalNetwork dyn_lists="DnsIPAddress SearchDomain">
+         <HostName></HostName>
+         <DefaultGateway></DefaultGateway>
+         <DefaultGatewayIPv6></DefaultGatewayIPv6>
+      </GlobalNetwork>
+   </NetworkSettings>
+   <DeviceInterfaceSettings dyn_lists="">
+      <MaxIdeDevices>4</MaxIdeDevices>
+      <MaxScsiDevices>16</MaxScsiDevices>
+      <MaxSataDevices>6</MaxSataDevices>
+      <MaxNvmeDevices>3</MaxNvmeDevices>
+   </DeviceInterfaceSettings>
+   <FloppyDisks dyn_lists="FloppyDisk 0"/>
+   <CdROMs dyn_lists="CdROM 0"/>
+   <HardDisks dyn_lists="HardDisk 3">
+      <HardDisk id="0" dyn_lists="Partition 3">
+         <Name>APPLE SSD AP1024R Media (disk0)</Name>
+         <Size>1000555581440</Size>
+         <Uuid>/dev/disk0</Uuid>
+         <Type>1</Type>
+         <LogicalSectorSize>4096</LogicalSectorSize>
+         <Index>0</Index>
+         <Partition id="0" dyn_lists="OsDistrInfo 0 Partition 0">
+            <Name>iBootSystemContainer</Name>
+            <SystemName>/dev/disk0s1</SystemName>
+            <Size>524288000</Size>
+            <FreeSize>-1</FreeSize>
+            <Index>1</Index>
+            <InUse>0</InUse>
+            <Type>255</Type>
+            <Logical>0</Logical>
+            <Active>0</Active>
+            <Start>24576</Start>
+            <GptType>{69646961-6700-11aa-aa11-00306543ecac}</GptType>
+            <TypeName></TypeName>
+            <OsInfo dyn_lists="">
+               <OsVersion>0</OsVersion>
+               <OsArchitecture>0</OsArchitecture>
+            </OsInfo>
+         </Partition>
+         <Partition id="1" dyn_lists="OsDistrInfo 0 Partition 0">
+            <Name>Container</Name>
+            <SystemName>/dev/disk0s2</SystemName>
+            <Size>994662584320</Size>
+            <FreeSize>-1</FreeSize>
+            <Index>2</Index>
+            <InUse>0</InUse>
+            <Type>255</Type>
+            <Logical>0</Logical>
+            <Active>0</Active>
+            <Start>524312576</Start>
+            <GptType>{7c3457ef-0000-11aa-aa11-00306543ecac}</GptType>
+            <TypeName>Apple APFS</TypeName>
+            <OsInfo dyn_lists="">
+               <OsVersion>0</OsVersion>
+               <OsArchitecture>0</OsArchitecture>
+            </OsInfo>
+         </Partition>
+         <Partition id="2" dyn_lists="OsDistrInfo 0 Partition 0">
+            <Name>RecoveryOSContainer</Name>
+            <SystemName>/dev/disk0s3</SystemName>
+            <Size>5368664064</Size>
+            <FreeSize>-1</FreeSize>
+            <Index>3</Index>
+            <InUse>0</InUse>
+            <Type>255</Type>
+            <Logical>0</Logical>
+            <Active>0</Active>
+            <Start>995186896896</Start>
+            <GptType>{52637672-7900-11aa-aa11-00306543ecac}</GptType>
+            <TypeName></TypeName>
+            <OsInfo dyn_lists="">
+               <OsVersion>0</OsVersion>
+               <OsArchitecture>0</OsArchitecture>
+            </OsInfo>
+         </Partition>
+         <Removable>0</Removable>
+         <External>0</External>
+         <IsVirtualDevice>0</IsVirtualDevice>
+         <IsVirtualDisk>0</IsVirtualDisk>
+         <ParentStoreName></ParentStoreName>
+         <PartitionScheme>1</PartitionScheme>
+      </HardDisk>
+      <HardDisk id="1" dyn_lists="Partition 6">
+         <Name>AppleAPFSMedia (disk3)</Name>
+         <Size>994662584320</Size>
+         <Uuid>/dev/disk3</Uuid>
+         <Type>1</Type>
+         <LogicalSectorSize>4096</LogicalSectorSize>
+         <Index>0</Index>
+         <Partition id="0" dyn_lists="OsDistrInfo 0 Partition 0">
+            <Name>Macintosh HD</Name>
+            <SystemName>/dev/disk3s1</SystemName>
+            <Size>994662584320</Size>
+            <FreeSize>-1</FreeSize>
+            <Index>16</Index>
+            <InUse>0</InUse>
+            <Type>255</Type>
+            <Logical>0</Logical>
+            <Active>0</Active>
+            <Start>0</Start>
+            <GptType>{41504653-0000-11aa-aa11-00306543ecac}</GptType>
+            <TypeName>APFS Internal</TypeName>
+            <OsInfo dyn_lists="">
+               <OsVersion>0</OsVersion>
+               <OsArchitecture>0</OsArchitecture>
+            </OsInfo>
+         </Partition>
+         <Partition id="1" dyn_lists="OsDistrInfo 0 Partition 0">
+            <Name>Preboot</Name>
+            <SystemName>/dev/disk3s2</SystemName>
+            <Size>994662584320</Size>
+            <FreeSize>-1</FreeSize>
+            <Index>13</Index>
+            <InUse>0</InUse>
+            <Type>255</Type>
+            <Logical>0</Logical>
+            <Active>0</Active>
+            <Start>0</Start>
+            <GptType>{41504653-0000-11aa-aa11-00306543ecac}</GptType>
+            <TypeName>APFS Internal</TypeName>
+            <OsInfo dyn_lists="">
+               <OsVersion>0</OsVersion>
+               <OsArchitecture>0</OsArchitecture>
+            </OsInfo>
+         </Partition>
+         <Partition id="2" dyn_lists="OsDistrInfo 0 Partition 0">
+            <Name>Recovery</Name>
+            <SystemName>/dev/disk3s3</SystemName>
+            <Size>994662584320</Size>
+            <FreeSize>-1</FreeSize>
+            <Index>14</Index>
+            <InUse>0</InUse>
+            <Type>171</Type>
+            <Logical>0</Logical>
+            <Active>0</Active>
+            <Start>0</Start>
+            <GptType>{41504653-0000-11aa-aa11-00306543ecac}</GptType>
+            <TypeName>APFS Internal</TypeName>
+            <OsInfo dyn_lists="">
+               <OsVersion>0</OsVersion>
+               <OsArchitecture>0</OsArchitecture>
+            </OsInfo>
+         </Partition>
+         <Partition id="3" dyn_lists="OsDistrInfo 0 Partition 0">
+            <Name>Update</Name>
+            <SystemName>/dev/disk3s4</SystemName>
+            <Size>994662584320</Size>
+            <FreeSize>-1</FreeSize>
+            <Index>15</Index>
+            <InUse>0</InUse>
+            <Type>255</Type>
+            <Logical>0</Logical>
+            <Active>0</Active>
+            <Start>0</Start>
+            <GptType>{41504653-0000-11aa-aa11-00306543ecac}</GptType>
+            <TypeName>APFS Internal</TypeName>
+            <OsInfo dyn_lists="">
+               <OsVersion>0</OsVersion>
+               <OsArchitecture>0</OsArchitecture>
+            </OsInfo>
+         </Partition>
+         <Partition id="4" dyn_lists="OsDistrInfo 0 Partition 0">
+            <Name>Data</Name>
+            <SystemName>/dev/disk3s5</SystemName>
+            <Size>994662584320</Size>
+            <FreeSize>-1</FreeSize>
+            <Index>18</Index>
+            <InUse>0</InUse>
+            <Type>255</Type>
+            <Logical>0</Logical>
+            <Active>0</Active>
+            <Start>0</Start>
+            <GptType>{41504653-0000-11aa-aa11-00306543ecac}</GptType>
+            <TypeName>APFS Internal</TypeName>
+            <OsInfo dyn_lists="">
+               <OsVersion>0</OsVersion>
+               <OsArchitecture>0</OsArchitecture>
+            </OsInfo>
+         </Partition>
+         <Partition id="5" dyn_lists="OsDistrInfo 0 Partition 0">
+            <Name>VM</Name>
+            <SystemName>/dev/disk3s6</SystemName>
+            <Size>994662584320</Size>
+            <FreeSize>-1</FreeSize>
+            <Index>17</Index>
+            <InUse>0</InUse>
+            <Type>255</Type>
+            <Logical>0</Logical>
+            <Active>0</Active>
+            <Start>0</Start>
+            <GptType>{41504653-0000-11aa-aa11-00306543ecac}</GptType>
+            <TypeName>APFS Internal</TypeName>
+            <OsInfo dyn_lists="">
+               <OsVersion>0</OsVersion>
+               <OsArchitecture>0</OsArchitecture>
+            </OsInfo>
+         </Partition>
+         <Removable>0</Removable>
+         <External>0</External>
+         <IsVirtualDevice>0</IsVirtualDevice>
+         <IsVirtualDisk>1</IsVirtualDisk>
+         <ParentStoreName>disk0s2</ParentStoreName>
+         <PartitionScheme>3</PartitionScheme>
+      </HardDisk>
+      <HardDisk id="2" dyn_lists="Partition 1">
+         <Name>Apple UDIF read-only compressed (zlib) Media (disk7)</Name>
+         <Size>8933888</Size>
+         <Uuid>/dev/disk7</Uuid>
+         <Type>0</Type>
+         <LogicalSectorSize>512</LogicalSectorSize>
+         <Index>0</Index>
+         <Partition id="0" dyn_lists="OsDistrInfo 0 Partition 0">
+            <Name>disk image</Name>
+            <SystemName>/dev/disk7s1</SystemName>
+            <Size>8896512</Size>
+            <FreeSize>-1</FreeSize>
+            <Index>1</Index>
+            <InUse>0</InUse>
+            <Type>175</Type>
+            <Logical>0</Logical>
+            <Active>0</Active>
+            <Start>20480</Start>
+            <GptType>{48465300-0000-11aa-aa11-00306543ecac}</GptType>
+            <TypeName>Apple HFS+</TypeName>
+            <OsInfo dyn_lists="">
+               <OsVersion>0</OsVersion>
+               <OsArchitecture>0</OsArchitecture>
+            </OsInfo>
+         </Partition>
+         <Removable>1</Removable>
+         <External>1</External>
+         <IsVirtualDevice>1</IsVirtualDevice>
+         <IsVirtualDisk>0</IsVirtualDisk>
+         <ParentStoreName>/Users/droxey/Downloads/Install Parallels Toolbox.dmg</ParentStoreName>
+         <PartitionScheme>1</PartitionScheme>
+      </HardDisk>
+   </HardDisks>
+   <SerialPorts dyn_lists="SerialPort 1">
+      <SerialPort id="0">
+         <Name>/dev/cu.Bluetooth-Incoming-Port</Name>
+         <Uuid>/dev/cu.Bluetooth-Incoming-Port</Uuid>
+      </SerialPort>
+   </SerialPorts>
+   <ParallelPorts dyn_lists="ParallelPort 0"/>
+   <NetworkAdapters dyn_lists="NetworkAdapter 1">
+      <NetworkAdapter id="0" dyn_lists="NetAddress DnsIPAddress SearchDomain">
+         <Name>Wi-Fi</Name>
+         <Uuid>en0</Uuid>
+         <index>0</index>
+         <Type>2</Type>
+         <Enabled>1</Enabled>
+         <MacAddress>AC:49:DB:DD:4D:24</MacAddress>
+         <NetAddress>2603:6010:3e00:f440::1885/ffff:ffff:ffff:ffff::</NetAddress>
+         <NetAddress>fe80::10a8:2968:2647:997b%en0/ffff:ffff:ffff:ffff::</NetAddress>
+         <NetAddress>192.168.1.120/255.255.255.0</NetAddress>
+         <NetAddress>2603:6010:3e00:f440:896:2471:fce6:3c89/ffff:ffff:ffff:ffff::</NetAddress>
+         <NetAddress>2603:6010:3e00:f440:3427:5383:e083:76b/ffff:ffff:ffff:ffff::</NetAddress>
+         <NetAddress>2603:6010:3e00:f440::1651/ffff:ffff:ffff:ffff::</NetAddress>
+         <ConfigureWithDhcp>0</ConfigureWithDhcp>
+         <DefaultGateway></DefaultGateway>
+         <ConfigureWithDhcpIPv6>0</ConfigureWithDhcpIPv6>
+         <DefaultGatewayIPv6></DefaultGatewayIPv6>
+         <VLANTag>65535</VLANTag>
+      </NetworkAdapter>
+   </NetworkAdapters>
+   <SoundDevices dyn_lists="">
+      <OutputDevices dyn_lists="OutputDevice 7">
+         <OutputDevice id="0">
+            <Name>Default</Name>
+            <Uuid>1|1|dda47b44f2614b04cbaa649ea54213d4e451709e</Uuid>
+         </OutputDevice>
+         <OutputDevice id="1">
+            <Name>MacBook Pro Speakers</Name>
+            <Uuid>BuiltInSpeakerDevice_out</Uuid>
+         </OutputDevice>
+         <OutputDevice id="2">
+            <Name>Detail Audio</Name>
+            <Uuid>DetailAudio_UID_out</Uuid>
+         </OutputDevice>
+         <OutputDevice id="3">
+            <Name>NoMachine Audio Adapter</Name>
+            <Uuid>NMAudioDevice_UID_out</Uuid>
+         </OutputDevice>
+         <OutputDevice id="4">
+            <Name>NoMachine Microphone Adapter</Name>
+            <Uuid>NMAudioMicDevice_UID_out</Uuid>
+         </OutputDevice>
+         <OutputDevice id="5">
+            <Name>ZoomAudioDevice</Name>
+            <Uuid>zoom.us.zoomaudiodevice.001_out</Uuid>
+         </OutputDevice>
+         <OutputDevice id="6">
+            <Name>Mute</Name>
+            <Uuid>Null_out</Uuid>
+         </OutputDevice>
+      </OutputDevices>
+      <MixerDevices dyn_lists="MixerDevice 8">
+         <MixerDevice id="0">
+            <Name>Default</Name>
+            <Uuid>0|1|7a4342575153757fe359779b26641a7d8553d9a3</Uuid>
+         </MixerDevice>
+         <MixerDevice id="1">
+            <Name>droxeyphone Microphone</Name>
+            <Uuid>39383830-0000-0000-0000-000000000003_in</Uuid>
+         </MixerDevice>
+         <MixerDevice id="2">
+            <Name>MacBook Pro Microphone</Name>
+            <Uuid>BuiltInMicrophoneDevice_in</Uuid>
+         </MixerDevice>
+         <MixerDevice id="3">
+            <Name>Detail Audio</Name>
+            <Uuid>DetailAudio_UID_in</Uuid>
+         </MixerDevice>
+         <MixerDevice id="4">
+            <Name>NoMachine Audio Adapter</Name>
+            <Uuid>NMAudioDevice_UID_in</Uuid>
+         </MixerDevice>
+         <MixerDevice id="5">
+            <Name>NoMachine Microphone Adapter</Name>
+            <Uuid>NMAudioMicDevice_UID_in</Uuid>
+         </MixerDevice>
+         <MixerDevice id="6">
+            <Name>ZoomAudioDevice</Name>
+            <Uuid>zoom.us.zoomaudiodevice.001_in</Uuid>
+         </MixerDevice>
+         <MixerDevice id="7">
+            <Name>Mute</Name>
+            <Uuid>Null_in</Uuid>
+         </MixerDevice>
+      </MixerDevices>
+   </SoundDevices>
+   <UsbDevices dyn_lists="UsbDevice 0"/>
+   <Printers dyn_lists="Printer 5">
+      <Printer id="0" dyn_lists="">
+         <Name>Default printer</Name>
+         <Uuid>Default printer</Uuid>
+         <Default>0</Default>
+      </Printer>
+      <Printer id="1" dyn_lists="">
+         <Name>Print to PDF (Mac Desktop)</Name>
+         <Uuid>Parallels Virtual PDF Printer</Uuid>
+         <Default>0</Default>
+      </Printer>
+      <Printer id="2" dyn_lists="">
+         <Name>Canon TR4700 series</Name>
+         <Uuid>Canon_TR4700_series</Uuid>
+         <Default>0</Default>
+      </Printer>
+      <Printer id="3" dyn_lists="">
+         <Name>Canon TR4700 series - Fax</Name>
+         <Uuid>Canon_TR4700_series___Fax</Uuid>
+         <Default>0</Default>
+      </Printer>
+      <Printer id="4" dyn_lists="">
+         <Name>Send to Kindle</Name>
+         <Uuid>stkPrinter</Uuid>
+         <Default>0</Default>
+      </Printer>
+   </Printers>
+   <Cameras dyn_lists="Camera 3">
+      <Camera id="0" dyn_lists="">
+         <Name>FaceTime HD Camera</Name>
+         <Uuid>47B4B64B-7067-4B9C-AD2B-AE273A71F4B5</Uuid>
+         <Resolutions>1920x1080@30-420V 1280x720@30-420V 1080x1920@30-420V 1760x1328@30-420V 640x480@30-420V 1328x1760@30-420V 1552x1552@30-420V</Resolutions>
+      </Camera>
+      <Camera id="1" dyn_lists="">
+         <Name>Detail Camera</Name>
+         <Uuid>B9F624E9-1725-4B5A-886C-8F3F42AAEEC0</Uuid>
+         <Resolutions>1920x1080@30-420F</Resolutions>
+      </Camera>
+      <Camera id="2" dyn_lists="">
+         <Name>droxeyphone Camera</Name>
+         <Uuid>39383830-0000-0000-0000-000000000001</Uuid>
+         <Resolutions>640x480@30-420V 640x480@60-420V 1280x720@30-420V 1280x720@60-420V 1920x1080@30-420V 1920x1080@60-420V 1920x1440@30-420V 1920x1440@60-420V</Resolutions>
+      </Camera>
+   </Cameras>
+   <SmartCardReaders dyn_lists="SmartCardReader 0"/>
+   <HIDDevices dyn_lists="HIDDevice 3">
+      <HIDDevice id="0" dyn_lists="">
+         <Name></Name>
+         <Uuid>0</Uuid>
+         <AlternateName></AlternateName>
+         <Transport></Transport>
+         <ProductID>0</ProductID>
+         <VendorID>0</VendorID>
+         <CountryCode></CountryCode>
+         <StandardType>0</StandardType>
+         <AltHandlerId>0</AltHandlerId>
+         <UsagePairs></UsagePairs>
+         <IsMouse>0</IsMouse>
+         <IsKeyboard>0</IsKeyboard>
+         <IsGameController>0</IsGameController>
+      </HIDDevice>
+      <HIDDevice id="1" dyn_lists="">
+         <Name></Name>
+         <Uuid>5</Uuid>
+         <AlternateName></AlternateName>
+         <Transport></Transport>
+         <ProductID>0</ProductID>
+         <VendorID>0</VendorID>
+         <CountryCode></CountryCode>
+         <StandardType>0</StandardType>
+         <AltHandlerId>0</AltHandlerId>
+         <UsagePairs></UsagePairs>
+         <IsMouse>0</IsMouse>
+         <IsKeyboard>0</IsKeyboard>
+         <IsGameController>0</IsGameController>
+      </HIDDevice>
+      <HIDDevice id="2" dyn_lists="">
+         <Name>Apple Internal Keyboard / Trackpad</Name>
+         <Uuid>2f</Uuid>
+         <AlternateName></AlternateName>
+         <Transport>SPI</Transport>
+         <ProductID>834</ProductID>
+         <VendorID>1452</VendorID>
+         <CountryCode>0x21|ANSI</CountryCode>
+         <StandardType>0</StandardType>
+         <AltHandlerId>0</AltHandlerId>
+         <UsagePairs>(0x1, 0x2)(0x1, 0x1)(0xff00, 0x25)(0x1, 0x6)(0xff00, 0x3)(0xff00, 0xd)(0xff00, 0xb)</UsagePairs>
+         <IsMouse>1</IsMouse>
+         <IsKeyboard>1</IsKeyboard>
+         <IsGameController>0</IsGameController>
+      </HIDDevice>
+   </HIDDevices>
+   <Cpu dyn_lists="">
+      <Number>10</Number>
+      <Model>Apple M1 Max</Model>
+      <Mode>1</Mode>
+      <Speed>4332</Speed>
+      <Type>1</Type>
+      <VtxEnabled>0</VtxEnabled>
+      <VtxMode>0</VtxMode>
+      <HvtNptAvail>0</HvtNptAvail>
+      <HvtUnrestrictedAvail>0</HvtUnrestrictedAvail>
+      <FEATURES>0</FEATURES>
+      <EXT_FEATURES>0</EXT_FEATURES>
+      <EXT_80000001_ECX>0</EXT_80000001_ECX>
+      <EXT_80000001_EDX>0</EXT_80000001_EDX>
+      <EXT_80000007_EDX>0</EXT_80000007_EDX>
+      <EXT_80000008_EAX>0</EXT_80000008_EAX>
+      <EXT_00000007_EBX>0</EXT_00000007_EBX>
+      <EXT_00000007_EDX>0</EXT_00000007_EDX>
+      <EXT_0000000D_EAX>0</EXT_0000000D_EAX>
+      <EXT_00000006_EAX>0</EXT_00000006_EAX>
+      <FEATURES_MASKING_CAP>0</FEATURES_MASKING_CAP>
+      <EXT_FEATURES_MASKING_CAP>0</EXT_FEATURES_MASKING_CAP>
+      <EXT_80000001_ECX_MASKING_CAP>0</EXT_80000001_ECX_MASKING_CAP>
+      <EXT_80000001_EDX_MASKING_CAP>0</EXT_80000001_EDX_MASKING_CAP>
+      <EXT_80000007_EDX_MASKING_CAP>0</EXT_80000007_EDX_MASKING_CAP>
+      <EXT_80000008_EAX_MASKING_CAP>0</EXT_80000008_EAX_MASKING_CAP>
+      <EXT_00000007_EBX_MASKING_CAP>0</EXT_00000007_EBX_MASKING_CAP>
+      <EXT_00000007_EDX_MASKING_CAP>0</EXT_00000007_EDX_MASKING_CAP>
+      <EXT_0000000D_EAX_MASKING_CAP>0</EXT_0000000D_EAX_MASKING_CAP>
+      <EXT_00000006_EAX_MASKING_CAP>0</EXT_00000006_EAX_MASKING_CAP>
+   </Cpu>
+   <OsVersion dyn_lists="">
+      <Type>0</Type>
+      <Major>13</Major>
+      <Minor>0</Minor>
+      <SubMinor>1</SubMinor>
+      <StringPresentation>macOS 13.0.1(22A400)</StringPresentation>
+      <OsArchitecture>64</OsArchitecture>
+      <KernelArchitecture>32</KernelArchitecture>
+   </OsVersion>
+   <PrivacyRestrictions dyn_lists="">
+      <Camera>1</Camera>
+      <Microphone>1</Microphone>
+   </PrivacyRestrictions>
+   <GenericPciDevices dyn_lists="GenericPciDevice 0"/>
+   <GenericScsiDevices dyn_lists="GenericScsiDevice 0"/>
+   <VtdInitializationCode>0</VtdInitializationCode>
+</ParallelsHostInfo>

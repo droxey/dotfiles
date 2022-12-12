@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.setapp.DesktopClient.SetappUpdater</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/droxey/Library/Application Support/Setapp/LaunchAgents/SetappUpdater.app/Contents/MacOS/SetappUpdater</string>
+		<string>-xpcServer</string>
+	</array>
+	<key>StartInterval</key>
+	<integer>21600</integer>
+</dict>
+</plist>

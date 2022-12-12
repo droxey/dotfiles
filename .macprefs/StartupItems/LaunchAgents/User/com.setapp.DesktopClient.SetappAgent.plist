@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<dict>
+		<key>Crashed</key>
+		<true/>
+		<key>SuccessfulExit</key>
+		<false/>
+	</dict>
+	<key>Label</key>
+	<string>com.setapp.DesktopClient.SetappAgent</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.setapp.AppReviewsService</key>
+		<true/>
+		<key>com.setapp.AppsManagementService</key>
+		<true/>
+		<key>com.setapp.BannersManagementService</key>
+		<true/>
+		<key>com.setapp.CommandLineService</key>
+		<true/>
+		<key>com.setapp.DashboardSectionsService</key>
+		<true/>
+		<key>com.setapp.NotificationsManagementService</key>
+		<true/>
+		<key>com.setapp.ProvisioningService</key>
+		<true/>
+		<key>com.setapp.RecommendationsService</key>
+		<true/>
+		<key>com.setapp.RemoteManagementService</key>
+		<true/>
+		<key>com.setapp.SystemManagementService</key>
+		<true/>
+		<key>com.setapp.TeamManagementService</key>
+		<true/>
+		<key>com.setapp.UIManagementService</key>
+		<true/>
+	</dict>
+	<key>ProcessType</key>
+	<string>Interactive</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/droxey/Library/Application Support/Setapp/LaunchAgents/Setapp.app/Contents/MacOS/SetappAgent</string>
+		<string>-xpcServer</string>
+	</array>
+	<key>ThrottleInterval</key>
+	<integer>1</integer>
+</dict>
+</plist>
