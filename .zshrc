@@ -66,3 +66,6 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:/opt/homebrew/bin/"
 export PATH="/opt/homebrew/opt/node@12/bin:$PATH"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
