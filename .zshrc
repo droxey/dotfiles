@@ -27,15 +27,11 @@ else
    export EDITOR='code'
 fi
 
-# source ~/.env
-
 #  -> Ruby
 if which rbenv >/dev/null; then eval "$(rbenv init -)"; fi
 
-# -> iTerm2 Integration
+# -> iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
-
-#  -> Keybindings
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
@@ -45,27 +41,28 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias githubstars='curl https://gist.githubusercontent.com/yyx990803/7745157/raw/dbcf4874d55490f3c2af9d593950964fe48b1e31/starcounter.js -sSL | node - droxey -t 1'
 alias mountusb='sudo ext4fuse /dev/disk2s1 ~/tmp/usb -o allow_other'
 alias mongod="mongo --port 27017 --dbpath /opt/homebrew/var/mongodb"
+alias python=/usr/local/bin/python3
 
-# -> Aliases
+# -> Node Version Manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+# -> dotfiles and preferences
+if [ ! -d "$HOME/.dotfiles" ]                                        # droxey's dotfiles
+then
+  echo "$HOME/.dotfiles does not exist. Are they installed?: https://github.com/droxey/dotfiles"
+else
+   export MACPREFS_BACKUP_DIR="$HOME/.macprefs"                      # MacPrefs (Plist Sync) to dotfiles repo on GitHub
+fi
+
+# -> Path Modification
+if [ -f '/Users/droxey/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/droxey/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/droxey/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/droxey/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH="$PATH:$HOME/.scripts"
 export PATH="$PATH:/var/root/Library/Python/3.8/bin"
 export PATH="$PATH:/Users/droxey/Library/Python/3.8/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:/opt/homebrew/bin/"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 export PATH="/opt/homebrew/opt/node@12/bin:$PATH"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/droxey/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/droxey/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/droxey/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/droxey/google-cloud-sdk/completion.zsh.inc'; fi
