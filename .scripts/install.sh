@@ -21,3 +21,12 @@ if [ $? = 0 ]; then
 fi;
 dotfiles checkout
 dotfiles config status.showUntrackedFiles no
+
+# Install Brew.
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install MacPrefs.
+brew install clintmod/formulas/macprefs
+
+# Restore .plist settings.
+macprefs restore
