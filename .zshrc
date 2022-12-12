@@ -50,7 +50,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # -> dotfiles and preferences
 if [ ! -d "$HOME/.dotfiles" ]                                        # droxey's dotfiles
-then
+then``
   echo "$HOME/.dotfiles does not exist. Are they installed?: https://github.com/droxey/dotfiles"
 else
    export MACPREFS_BACKUP_DIR="$HOME/.macprefs"                      # MacPrefs (Plist Sync) to dotfiles repo on GitHub
