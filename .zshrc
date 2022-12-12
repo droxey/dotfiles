@@ -41,31 +41,33 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias githubstars='curl https://gist.githubusercontent.com/yyx990803/7745157/raw/dbcf4874d55490f3c2af9d593950964fe48b1e31/starcounter.js -sSL | node - droxey -t 1'
 alias mountusb='sudo ext4fuse /dev/disk2s1 ~/tmp/usb -o allow_other'
 alias mongod="mongo --port 27017 --dbpath /opt/homebrew/var/mongodb"
-alias python=/usr/local/bin/python3
-
-# -> Node Version Manager
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-
-# -> dotfiles and preferences
-if [ ! -d "$HOME/.dotfiles" ]                                        # droxey's dotfiles
-then``
-  echo "$HOME/.dotfiles does not exist. Are they installed?: https://github.com/droxey/dotfiles"
-else
-   export MACPREFS_BACKUP_DIR="$HOME/.macprefs"                      # MacPrefs (Plist Sync) to dotfiles repo on GitHub
-fi
+# alias python=/opt/homebrew/bin/python3
+# alias python3=/opt/homebrew/bin/python3
 
 # -> Path Modification
 if [ -f '/Users/droxey/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/droxey/google-cloud-sdk/path.zsh.inc'; fi
 if [ -f '/Users/droxey/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/droxey/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH="$PATH:$HOME/.scripts"
-export PATH="$PATH:/var/root/Library/Python/3.8/bin"
-export PATH="$PATH:/Users/droxey/Library/Python/3.8/bin"
+export PATH="$PATH:$HOME/.dotfiles"
+export PATH="$PATH:/opt/homebrew/bin/"
+export PATH="$PATH:/opt/homebrew/opt/python@3.10/libexec/bin"
+export PATH="$PATH:/opt/homebrew/lib/python3.10/site-packages"
+export PATH="/opt/homebrew/opt/node@19/bin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="$PATH:/opt/homebrew/bin/"
-export PATH="/opt/homebrew/opt/node@12/bin:$PATH"
+
+# Pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+# -> Node Version Manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+# -> Dotfiles and Preferences
+[ ! -d "$HOME/.dotfiles" ] && echo "$HOME/.dotfiles does not exist. Are they installed?: https://github.com/droxey/dotfiles"
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
