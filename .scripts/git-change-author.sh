@@ -1,9 +1,26 @@
+# Fixes git identity issues by amending the author's name, email, or both.
+# TIP: Set CORRECT_EMAIL to any verified email in your GitHub profile: https://github.com/settings 
+
+# 1. Add a value to each empty variable defined below. Save the file.
+# 2. Set permissions: `chmod +x git-change-author.sh`
+# 3. Run `./git-change-author.sh` in any folder to amend all commits in the repo. 
+# 4. Add, commit, and push the changes.
+# 5. Verify the change by visiting https://github.com/profile. 
+#      Scroll to the graph on the bottom. 
+#      You'll see more little green squares, indicating that the
+#      local git identity now matches a registered address in GitHub.
 #!/bin/bash
 
+# Email assigned to previous commits (what you want to change):
 OLD_EMAIL=
-CORRECT_EMAIL=
+# The URL to the GitHub repo page:
 GITHUB_REPO_URL=
+# Corrected name to associate with commits:
 CORRECT_NAME=
+# Corrected email address assigned to all commits:
+CORRECT_EMAIL=
+
+
 
 while [ "$1" != "" ]; do
     case $1 in
