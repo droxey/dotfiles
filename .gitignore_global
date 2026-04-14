@@ -47,3 +47,8 @@ Temporary Items
 codealike.json
 *.cfg
 id_*
+
+.bashenv
+.zshenv
+.env
+venv/
